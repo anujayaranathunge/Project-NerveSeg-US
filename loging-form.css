@@ -1,0 +1,23 @@
+body{background-color:#5c97bd;}
+#wrap{width:100%;}
+#loging-page{width:100%;}
+#loging-page .login-title{margin: 100px auto 0;  padding: 15px; text-align: center; color: #edf4f8; font-size: 18px; font-weight: bold;}
+
+#loging-page .login-form{width:400px; margin: 40px auto;}
+#loging-page .form-title{margin-bottom:25px;}
+#loging-page .form-title p{padding:5px 0;}
+#loging-page .form-title span.first{ color: #edf4f8; font-size: 19px; font-weight:bold;}
+#loging-page .form-title span.sub-text{color: #c9dce9; font-size: 17px; padding-left: 10px;}
+#loging-page .form-title p {text-align:center;}
+#loging-page .form-title .alert-text{color: #edf4f8; font-size: 17px; padding-left: 10px; text-align:center;}
+#loging-page .form-group{margin-bottom: 15px;}
+#loging-page .form-group input[type="text"], #loging-page .form-group input[type="password"]
+{background-color: #6ba3c8; border: 1px solid #6ba3c8; height: 43px; color: #d9ecf9; width: 374px; padding: 6px 12px; outline: 0!important; }
+
+#loging-page .form-group input[type="submit"]
+{background-color: #e12330; line-height: 1.44; font-weight:bold; letter-spacing:3px; padding: 10px 0; margin-top: 1px; color: #fff;  border-color: #dc1e2b; border: 1px solid #90bbd7; text-decoration: none; width: 400px; }
+
+#loging-page .btn-area-center, #loging-page .btn-area-center *{color:#fff;}
+#loging-page .notice{text-align:center; margin-top:30px; font-size:14px; line-height:25px; color:#fff;}
+#loging-page .notice p{font-weight:bold;}
+#loging-page .notice p span{font-size:16px;  color: #d9ecf9;}
