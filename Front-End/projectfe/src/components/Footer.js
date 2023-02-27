@@ -7,7 +7,12 @@ const Footer = () => {
     <footer className='bg-dark text-light'>
       <Container>
         <Row>
-          <Col md={4}  >
+          <Col md={4}>
+          <br/>
+          <h3 >NervevSeg-US</h3><br/>
+          <p>Identification of source of pain through nerve segmentation of ultrasound medical images.</p>
+          </Col>
+          <Col md={4} >
             <br/>
             <h5 className='text-warning'>Get In Touch</h5>
             <br/>
@@ -40,7 +45,7 @@ const Footer = () => {
                 />{' '}
                 +94778694522</p>
           </Col>
-          <Col md={4}>
+          <Col md={2}>
           <br/>
             <h5 className='text-warning'>Quick Links</h5>
             <ul className="list-unstyled, variant-dark">
@@ -51,7 +56,7 @@ const Footer = () => {
               <li><a href="/contact" class="text-light text-decoration-none">Contact</a></li>
             </ul>
           </Col>
-          <Col md={4}>
+          <Col md={2}>
           <br/>
             <h5 className='text-warning'>Follow Us</h5>
             <br/>
@@ -94,13 +99,11 @@ const Footer = () => {
                   className="d-inline-block align-top"
                 />
                 </a>
-                
-           
           </Col>
         </Row>
         <Row>
-          <Col md={12}>
-            <p>&copy; 2023 MyWebsite. All Rights Reserved.</p>
+          <Col md={8}>
+            <p className='text-secondary'>&copy; 2023 MyWebsite. All Rights Reserved.</p>
           </Col>
         </Row>
       </Container>
