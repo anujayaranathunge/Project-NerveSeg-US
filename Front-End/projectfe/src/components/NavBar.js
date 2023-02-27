@@ -6,7 +6,8 @@ import {Link} from "react-router-dom";
 export const NavBar =() => {
     return (
       <>
-    <Navbar bg="success" variant='dark' expand="lg">
+    <div style={{ height: '56px' }}></div>
+    <Navbar bg="success" variant='dark' expand="lg" fixed="top">
     <Container>
         <Navbar.Brand>NervevSeg-US</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-seg"/>
