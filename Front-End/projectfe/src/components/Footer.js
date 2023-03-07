@@ -7,7 +7,14 @@ const Footer = () => {
     <footer className='bg-dark text-light'>
       <Container>
         <Row>
-          <Col md={4}  >
+
+          <Col md={4}>
+            <br/>
+          <h3 className='text-warning'>NerveSeg-US</h3>
+          <p>Identification of source of pain through nerve segmentation of ultrasound medical images.</p>
+          </Col>
+
+          <Col md={3}  >
             <br/>
             <h5 className='text-warning'>Get In Touch</h5>
             <br/>
@@ -40,18 +47,20 @@ const Footer = () => {
                 />{' '}
                 +94778694522</p>
           </Col>
-          <Col md={4}>
+
+          <Col md={2}>
           <br/>
             <h5 className='text-warning'>Quick Links</h5>
             <ul className="list-unstyled, variant-dark">
               <li><a href="/home" class="text-light text-decoration-none">Home</a></li>
               <li><a href="/about" class="text-light text-decoration-none">About</a></li>
-              <li><a href="/doctor" class="text-light text-decoration-none">Doctor</a></li>
-              <li><a href="/patient" class="text-light text-decoration-none">Patient</a></li>
+              <li><a href="/doctorlog" class="text-light text-decoration-none">Doctor</a></li>
+              <li><a href="/patientlog" class="text-light text-decoration-none">Patient</a></li>
               <li><a href="/contact" class="text-light text-decoration-none">Contact</a></li>
             </ul>
           </Col>
-          <Col md={4}>
+
+          <Col md={3}>
           <br/>
             <h5 className='text-warning'>Follow Us</h5>
             <br/>
@@ -95,7 +104,6 @@ const Footer = () => {
                 />
                 </a>
                 
-           
           </Col>
         </Row>
         <Row>
