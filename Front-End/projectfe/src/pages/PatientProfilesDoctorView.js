@@ -5,11 +5,28 @@ import PatientInfoUpdater from "../components/patientProfiles/PatientInfoUpdater
 
 const PatientProfilesDoctorView = () => {
   return (
-    <Container>
-      <Row style={{ height: "768px" }}>
-        <Col style={{ backgroundColor: "red" }} md={4}>
-          <ListGroup>
-            {[...new Array(5)].map((patient) => (
+    <Container style={{ height: "768px" }}>
+      <Row style={{ height: "100%" }}>
+        <Col
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            height: "100%",
+          }}
+          md={4}
+        >
+          <h1
+            style={{
+              fontWeight: "800",
+              fontSize: "32px",
+              color: "#1612C8",
+              paddingBottom: "37px",
+            }}
+          >
+            Patient Profiles
+          </h1>
+          <ListGroup style={{ flex: 1, overflow: "scroll", rowGap: "11px" }}>
+            {[...new Array(50)].map((patient) => (
               <PatientInfoCard
                 patientName={
                   "sss 423324213123 423324213123 423324213123 423324213123 fsdddddddddddddd"
@@ -22,7 +39,7 @@ const PatientProfilesDoctorView = () => {
           </ListGroup>
         </Col>
         <Col style={{ backgroundColor: "green" }} md={8}>
-          <PatientInfoUpdater/>
+          <PatientInfoUpdater />
         </Col>
       </Row>
     </Container>

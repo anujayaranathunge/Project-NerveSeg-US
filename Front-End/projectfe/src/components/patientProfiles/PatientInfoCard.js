@@ -4,7 +4,11 @@ import Image from "react-bootstrap/Image";
 const PatientInfoCard = ({ patientName, patientId }) => {
   return (
     <ListGroup.Item
-      style={{ height: "80px", backgroundColor: "#9BB4F3" }}
+      style={{
+        height: "80px",
+        backgroundColor: "#9BB4F3",
+        borderRadius: "20px",
+      }}
       eventKey={patientId}
     >
       <div style={{ display: "flex", gap: "11px", alignItems: "center" }}>
