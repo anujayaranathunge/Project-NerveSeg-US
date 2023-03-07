@@ -3,27 +3,16 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const Footer = () => {
   return (
-    <div>
     <footer className='bg-dark text-light'>
       <Container>
         <Row>
-<<<<<<< HEAD
-
           <Col md={4}>
             <br/>
           <h3 className='text-warning'>NerveSeg-US</h3>
           <p>Identification of source of pain through nerve segmentation of ultrasound medical images.</p>
           </Col>
 
-          <Col md={3}  >
-=======
-          <Col md={4}>
-          <br/>
-          <h3 >NervevSeg-US</h3><br/>
-          <p>Identification of source of pain through nerve segmentation of ultrasound medical images.</p>
-          </Col>
           <Col md={4} >
->>>>>>> 09735e639c87bd74248fe2ea468ab6762a126022
             <br/>
             <h5 className='text-warning'>Get In Touch</h5>
             <br/>
@@ -56,10 +45,9 @@ const Footer = () => {
                 />{' '}
                 +94778694522</p>
           </Col>
-<<<<<<< HEAD
 
-=======
->>>>>>> 09735e639c87bd74248fe2ea468ab6762a126022
+
+
           <Col md={2}>
           <br/>
             <h5 className='text-warning'>Quick Links</h5>
@@ -71,12 +59,9 @@ const Footer = () => {
               <li><a href="/contact" class="text-light text-decoration-none">Contact</a></li>
             </ul>
           </Col>
-<<<<<<< HEAD
 
-          <Col md={3}>
-=======
           <Col md={2}>
->>>>>>> 09735e639c87bd74248fe2ea468ab6762a126022
+
           <br/>
             <h5 className='text-warning'>Follow Us</h5>
             <br/>
@@ -119,10 +104,7 @@ const Footer = () => {
                   className="d-inline-block align-top"
                 />
                 </a>
-<<<<<<< HEAD
-                
-=======
->>>>>>> 09735e639c87bd74248fe2ea468ab6762a126022
+
           </Col>
         </Row>
         <Row>
@@ -132,7 +114,7 @@ const Footer = () => {
         </Row>
       </Container>
     </footer>
-    </div>
+    
   );
 };
 export default Footer;
