@@ -5,7 +5,7 @@ import PatientInfoUpdater from "../components/patientProfiles/PatientInfoUpdater
 
 const PatientProfilesDoctorView = () => {
   return (
-    <Container style={{ height: "768px" }}>
+    <Container style={{ height: "768px", padding: "28px" }}>
       <Row style={{ height: "100%" }}>
         <Col
           style={{
@@ -25,7 +25,15 @@ const PatientProfilesDoctorView = () => {
           >
             Patient Profiles
           </h1>
-          <ListGroup style={{ flex: 1, overflow: "scroll", rowGap: "11px" }}>
+          <ListGroup
+            style={{
+              flex: 1,
+              overflow: "scroll",
+              rowGap: "11px",
+
+              paddingRight: "20px",
+            }}
+          >
             {[...new Array(50)].map((patient) => (
               <PatientInfoCard
                 patientName={

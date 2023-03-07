@@ -30,7 +30,6 @@ const InfoEditor = ({ title, placeholder, exsistingContent }) => {
           // fontSize: "28px",
           lineHeight: "34px",
           color: "#FFFFFF",
-          marginBottom: "15px",
         }}
       >
         {title}
@@ -65,18 +64,21 @@ const PatientInfoUpdater = () => {
         flexDirection: "column",
         height: "100%",
         backgroundColor: "#A4CBCD",
+        borderRadius: "20px",
+        padding: "35px 10px 25px 30px",
       }}
     >
-      <Row style={{ flex: 1 }}>
+      <Row style={{ display: "flex", flex: 1, gap: "10px" }}>
         <Col style={{ display: "flex", flexDirection: "column" }}>
           <Row>
             <div
               style={{
                 display: "flex",
-                gap: "11px",
+                gap: "10px",
                 alignItems: "center",
                 height: "80px",
                 borderRadius: "20px",
+                marginBottom: "15px",
               }}
             >
               <Image
@@ -94,16 +96,18 @@ const PatientInfoUpdater = () => {
             <InfoEditor title="Treatments" placeholder="Add Treatment" />
           </Row>
         </Col>
-        <Col>
-          <Row>
-            <Col md={6}>
-              <InfoEditor />
-            </Col>
+        <Col style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+          <Row style={{ height: "50%" }}>
+            <InfoEditor
+              title="Doctor Updates"
+              placeholder="Add Doctor Updates"
+            />
           </Row>
-          <Row>
-            <Col md={6}>
-              <InfoEditor />
-            </Col>
+          <Row style={{ height: "50%" }}>
+            <InfoEditor
+              title="Patient Progress"
+              placeholder="Patient Progress"
+            />
           </Row>
         </Col>
       </Row>
@@ -111,7 +115,7 @@ const PatientInfoUpdater = () => {
         style={{
           display: "flex",
           justifyContent: "flex-end",
-          padding: "20px",
+          paddingTop: "20px",
         }}
       >
         <Button
