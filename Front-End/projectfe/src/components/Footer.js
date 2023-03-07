@@ -13,7 +13,10 @@ const Footer = () => {
           </Col>
 
           <Col md={4} >
-            <br/>
+
+          <br/>
+          
+            <div className='getintuch'>
             <h5 className='text-warning'>Get In Touch</h5>
             <br/>
             <p>
@@ -44,6 +47,7 @@ const Footer = () => {
                   className="d-inline-block align-top"
                 />{' '}
                 +94778694522</p>
+                </div>
           </Col>
 
 
@@ -104,12 +108,13 @@ const Footer = () => {
                   className="d-inline-block align-top"
                 />
                 </a>
+        
 
           </Col>
         </Row>
         <Row>
           <Col md={8}>
-            <p>&copy; 2023 MyWebsite. All Rights Reserved.</p>
+            <p>&copy; 2023 NerveSeg-US. All Rights Reserved.</p>
           </Col>
         </Row>
       </Container>
