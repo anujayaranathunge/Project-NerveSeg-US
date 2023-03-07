@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, ListGroup, Row } from "react-bootstrap";
 import PatientInfoCard from "../components/patientProfiles/PatientInfoCard";
-import PatientInfoUpdater from "../components/patientProfiles/PatientInfoUpdater";
+import PatientInfo from "../components/patientProfiles/PatientInfo";
 
 const PatientProfilesDoctorView = () => {
   return (
@@ -47,7 +47,7 @@ const PatientProfilesDoctorView = () => {
           </ListGroup>
         </Col>
         <Col style={{ height: "100%" }} md={8}>
-          <PatientInfoUpdater />
+          <PatientInfo />
         </Col>
       </Row>
     </Container>
