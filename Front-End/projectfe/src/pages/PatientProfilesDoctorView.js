@@ -18,7 +18,7 @@ const PatientProfilesDoctorView = () => {
           <h1
             style={{
               fontWeight: "800",
-              fontSize: "32px",
+              // fontSize: "32px",
               color: "#1612C8",
               paddingBottom: "37px",
             }}
@@ -38,7 +38,7 @@ const PatientProfilesDoctorView = () => {
             ))}
           </ListGroup>
         </Col>
-        <Col style={{ backgroundColor: "green" }} md={8}>
+        <Col style={{ height: "100%" }} md={8}>
           <PatientInfoUpdater />
         </Col>
       </Row>

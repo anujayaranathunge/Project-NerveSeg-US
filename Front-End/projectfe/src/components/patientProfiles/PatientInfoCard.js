@@ -5,13 +5,15 @@ const PatientInfoCard = ({ patientName, patientId }) => {
   return (
     <ListGroup.Item
       style={{
+        display: "flex",
+        gap: "11px",
+        alignItems: "center",
         height: "80px",
         backgroundColor: "#9BB4F3",
         borderRadius: "20px",
       }}
       eventKey={patientId}
     >
-      <div style={{ display: "flex", gap: "11px", alignItems: "center" }}>
         <Image
           roundedCircle
           style={{ height: "62px", width: "62px" }}
@@ -21,7 +23,6 @@ const PatientInfoCard = ({ patientName, patientId }) => {
           <div>{patientName}</div>
           <div>{`ID - ${patientName}`}</div>
         </div>
-      </div>
     </ListGroup.Item>
   );
 };
