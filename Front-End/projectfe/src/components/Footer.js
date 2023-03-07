@@ -109,7 +109,7 @@ const Footer = () => {
         </Row>
         <Row>
           <Col md={8}>
-            <p className='text-secondary'>&copy; 2023 MyWebsite. All Rights Reserved.</p>
+            <p>&copy; 2023 MyWebsite. All Rights Reserved.</p>
           </Col>
         </Row>
       </Container>
