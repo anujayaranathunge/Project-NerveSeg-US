@@ -1,7 +1,5 @@
 import React from "react";
 import { Container, Row, Col, Button,Image, Link } from 'react-bootstrap';
-import './home.css';
-
 
 export const Home = () =>{
     return(
