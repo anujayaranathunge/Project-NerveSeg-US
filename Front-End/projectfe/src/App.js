@@ -9,6 +9,7 @@ import {About} from './pages/about';
 import {Contact} from './pages/contact';
 import {Doctor} from './pages/doctorlog';
 import {Patient} from './pages/patientlog';
+import ContactForm from './pages/insert-imageUS';
 function App() {
   return (
     <>
@@ -22,6 +23,7 @@ function App() {
         <Route path='/patientlog' element={<Patient/>}/> 
       </Routes>
     </Router>
+    <ContactForm/>
     <Footer/>
     </>
   );
