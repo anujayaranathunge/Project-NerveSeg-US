@@ -7,7 +7,7 @@ import FormInput from "./FormInput";
 export const Doctor = () =>{
     const [values,setValues] = useState({
         FullName:"",
-        DateofBirth:"",
+        DoctorID:"",
         Email:"",
         Password:""
     })
@@ -68,12 +68,12 @@ export const Doctor = () =>{
     console.log(values);
     let Linking;
     return (
-        <div className="patient">
+        <div className="doctor">
             <form onSubmit={handleSubmit}>
-                <h1>Get Started!</h1>
-                <h2>Patient</h2>
-                <h6>Already have an account ?</h6>
-                <Link className="Link" to='/Home'>Sign in</Link>
+                <h1 className="D1">Get Started!</h1>
+                <h2 className="D2">Doctor</h2>
+                <h6 className="D3">Already have an account ?</h6>
+                <Link className="Link1" to='/Home'>Sign in</Link>
                 {inputs.map((input) => (
                     <FormInput
                         key={input.id}
@@ -82,7 +82,7 @@ export const Doctor = () =>{
                         onChange={onChange}
                     />
                 ))}
-                <button className="BTN">SIGN UP</button>
+                <button className="BTN1">SIGN UP</button>
 
 
             </form>
