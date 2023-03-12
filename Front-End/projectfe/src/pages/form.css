@@ -20,6 +20,7 @@ input{
 
 label{
     font-size: 15px;
+    font-weight: bold;
     color: black;
     position: absolute;
     left: 400px;
