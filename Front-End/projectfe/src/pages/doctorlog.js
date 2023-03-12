@@ -26,11 +26,12 @@ export const Doctor = () =>{
         {
             id:2,
             name:"Doctor ID",
-            type:"number",
+            type:"text",
             placeholder:"Enter your Medical ID",
             errorMessage:"Medical number should be 3-8 characters and shouldn't include any special characters! ",
-            pattern:"^[A-Za-z0-9]{3,16}$",
-            label:"Date of Birth :"
+            label:"Doctor ID :",
+            pattern:"^[A-Za-z0-9]{3,8}$",
+            required:true,
 
         },
         {
