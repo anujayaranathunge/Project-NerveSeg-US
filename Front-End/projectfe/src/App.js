@@ -9,7 +9,10 @@ import {About} from './pages/about';
 import {Contact} from './pages/contact';
 import {Doctor} from './pages/doctorlog';
 import {Patient} from './pages/patientlog';
-import ContactForm from './pages/insert-imageUS';
+import {ImageUploadForm} from './pages/insertimageus';
+
+
+
 function App() {
   return (
     <>
@@ -20,10 +23,10 @@ function App() {
         <Route path='/about'  element={<About/>}/> 
         <Route path='/contact' element={<Contact/>}/> 
         <Route path='/doctorlog' element={<Doctor/>}/> 
-        <Route path='/patientlog' element={<Patient/>}/> 
+        <Route path='/patientlog' element={<Patient/>}/>
+        <Route path='/insertimageus' element={<ImageUploadForm/>}/>  
       </Routes>
     </Router>
-    <ContactForm/>
     <Footer/>
     </>
   );

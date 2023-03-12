@@ -1,0 +1,39 @@
+.div-one{
+    margin-left: 70px;
+    margin-top: 50px;
+    width: 400px;
+    
+}
+.text-box-one{
+    margin-left: 120px;
+    margin-top: -37px;
+}
+.uplode{
+    margin-left: 0px;
+}
+.textTretmat{
+    margin-left: 70px;
+}
+.text-area{
+    margin-left: 70px;
+    height: 200px;
+    background-color: rgba(11, 103, 108, 1);
+}
+.div-02{
+    width: 600px;
+}
+.div-03{
+    background-color: rgba(217, 217, 217, 1);
+    height: 400px;
+    margin-top: 45px;
+    margin-right: 40px;
+}
+.button-01{
+    height: 70px;
+    width: 200px;
+    margin-top: 120px;
+    margin-left: 450px;
+    font-weight: bold;
+    
+
+}

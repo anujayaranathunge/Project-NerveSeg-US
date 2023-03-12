@@ -26,7 +26,7 @@ export const Home = () =>{
                 <br/>
                 <br/>
                <h4 className="texthome">Sign in as a Doctor</h4> 
-               <a href="/doctorlog" class="text-light text-decoration-none">
+               <a href="/insertimageus" class="text-light text-decoration-none">
                <Button className="buttonSinein">SIGN IN</Button>
                </a>
                </div>
