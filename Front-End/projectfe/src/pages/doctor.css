@@ -1,0 +1,66 @@
+.patient{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background: #D3EAF6;
+}
+form{
+    background:#D3EAF6;
+    padding: 0px 60px;
+}
+.BTN{
+    background: #2760F1;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+    width: 170px;
+    height: 40px;
+    position: absolute;
+    left: 610px;
+    font-size: 20px;
+    top: 410px;
+}
+h1{
+    color: #2760F1;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    left: 590px;
+}
+h2{
+    color: black;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    font-weight: bold;
+}
+h6 {
+    color: black;
+    text-align: center;
+    position: absolute;
+    top: 470px;
+    left: 600px;
+    font-weight: bold;
+}
+.Link{
+    color: blue;
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    top: 468px;
+    left: 805px;
+    font-weight: bold;
+    background: none;
+
+
+}
+@media only screen and (max-width: 800px){
+    h1{
+        visibility: collapse;
+    }
+
+
+
+}
