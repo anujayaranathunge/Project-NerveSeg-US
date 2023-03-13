@@ -2,15 +2,18 @@ import {Link} from "react-router-dom";
 import React, {useState} from "react";
 import "./doctor.css"
 import FormInput from "./FormInput";
+import {wait} from "@testing-library/user-event/dist/utils";
 
 
 export const Doctor = () =>{
+    const res=await fetch("https://sdgp-12-default-rtdb.firebaseio.com/")
     const [values,setValues] = useState({
         FullName:"",
         DoctorID:"",
         Email:"",
         Password:""
     })
+
 
     const inputs = [
         {
