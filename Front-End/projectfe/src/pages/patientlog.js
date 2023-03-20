@@ -68,9 +68,9 @@ export const Patient = () =>{
     return (
         <div className="patient">
         <form onSubmit={handleSubmit}>
-            <h1>Get Started!</h1>
-            <h2>Patient</h2>
-            <h6>Already have an account ?</h6>
+            <h1 className="P1">Get Started!</h1>
+            <h2 className="P2">Patient</h2>
+            <h6 className="P3">Already have an account ?</h6>
             <Link className="Link" to='/Home'>Sign in</Link>
             {inputs.map((input) => (
                 <FormInput

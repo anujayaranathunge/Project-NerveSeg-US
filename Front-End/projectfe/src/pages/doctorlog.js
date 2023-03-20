@@ -6,7 +6,6 @@ import {wait} from "@testing-library/user-event/dist/utils";
 
 
 export const Doctor = () =>{
-    const res=await fetch("https://sdgp-12-default-rtdb.firebaseio.com/")
     const [values,setValues] = useState({
         FullName:"",
         DoctorID:"",
