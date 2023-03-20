@@ -22,7 +22,7 @@ const Footer = () => {
             <p>
             <img
                   alt=""
-                  src="location.png"
+                  src="images/location.png"
                   width="30"
                   height="30"
                   className="d-inline-block align-top"
@@ -31,7 +31,7 @@ const Footer = () => {
             <p>
             <img
                   alt=""
-                  src="email.png"
+                  src="images/email.png"
                   width="30"
                   height="30"
                   className="d-inline-block align-top"
@@ -41,7 +41,7 @@ const Footer = () => {
             <p>
             <img
                   alt=""
-                  src="telephone.png"
+                  src="images/telephone.png"
                   width="30"
                   height="30"
                   className="d-inline-block align-top"
@@ -72,7 +72,7 @@ const Footer = () => {
               <a href="#">
               <img
                   alt=""
-                  src="facebook.png"
+                  src="images/facebook.png"
                   width="30"
                   height="30"
                   className="d-inline-block align-top"
@@ -82,7 +82,7 @@ const Footer = () => {
               <a href="#">
                 <img
                   alt=""
-                  src="twitter.png"
+                  src="images/twitter.png"
                   width="30"
                   height="30"
                   className="d-inline-block align-top"
@@ -92,7 +92,7 @@ const Footer = () => {
               <a href="#">
               <img
                   alt=""
-                  src="insta.png"
+                  src="images/insta.png"
                   width="30"
                   height="30"
                   className="d-inline-block align-top"
@@ -102,7 +102,7 @@ const Footer = () => {
               <a href="#">
               <img
                   alt=""
-                  src="likein.png"
+                  src="images/likein.png"
                   width="30"
                   height="30"
                   className="d-inline-block align-top"

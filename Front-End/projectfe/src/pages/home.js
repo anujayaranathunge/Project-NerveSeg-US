@@ -7,7 +7,7 @@ export const Home = () =>{
       <Row>
         <Col>
         <br/>
-        <div className="welcometext">
+        <div className="welcometexthome">
           <h4>Welcome to</h4>
           <h1>NerveSeg-US</h1>
         </div>
@@ -19,7 +19,7 @@ export const Home = () =>{
           <div className="homeicone">
           <img
                   alt=""
-                  src="doctor.png"
+                  src="images/doctor.png"
                   width="250"
                   height="242"
                 />
@@ -39,7 +39,7 @@ export const Home = () =>{
           <div className="homeicone">
           <img
                   alt=""
-                  src="hospitalisation.png"
+                  src="images/hospitalisation.png"
                   width="250"
                   height="266"
                 />

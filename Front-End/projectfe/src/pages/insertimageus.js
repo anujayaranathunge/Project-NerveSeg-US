@@ -5,6 +5,9 @@ import { CloudUpload } from 'react-bootstrap-icons';
 export const ImageUploadForm = () =>{
   const [selectedFile, setSelectedFile] = useState(null);
   const [preview, setPreview] = useState(null);
+  const [imageUrl, setImageUrl] = useState('');
+  const [textareaValue, setTextareaValue] = useState('');
+  const [labelText, setLabelText] = useState('');
 
   const handleFileInputChange = (e) => {
     const file = e.target.files[0];
@@ -15,6 +18,18 @@ export const ImageUploadForm = () =>{
     e.preventDefault();
     // handle file upload logic
   };
+  const showImage = () => {
+    setImageUrl('images/1_1_mask.png');
+    setLabelText('Nerve Anomalies Found !');
+  };
+  const handleButtonClick = () => {
+    const newText = "Catheter Insertion is needed. \nConsult your physician on further treatments. \n\n\n\n Thank you For Using NervevSeg-US ! ";
+    if (textareaValue.includes(newText)) {
+      return;
+    }
+    setTextareaValue(textareaValue + newText);
+  };
+  
 
     return(
 <>
@@ -43,6 +58,7 @@ export const ImageUploadForm = () =>{
         </div>
       )}
       <Button
+        onClick={showImage}
         type="submit"
         variant="primary"
         disabled={!selectedFile}
@@ -56,34 +72,40 @@ export const ImageUploadForm = () =>{
     </Col>
     <Col>
     <div className="div-03">
-    {preview && (
-        <div >
-          <img src={preview} alt="Preview" style={{ width: '100%' }} />
-        </div>
-      )}
+    <img
+        className="img-fluid"
+        src={imageUrl}
+        alt=""
+        style={{ display: imageUrl ? 'block' : 'none' }}
+      />
     </div>
+    <div className="imageLabel">
+    <label>{labelText}</label>
+    </div>
+    
+    <Button className="treatmentsButton" onClick={handleButtonClick}>View Treatments</Button>
     </Col>
     </Row><br/>
     <Row>
         <Col>
-        <div className="div-02">
-            <Form>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-            <Form.Label className="textTretmat">Treatment</Form.Label>
-            <Form.Control className="text-area" as="textarea" rows={3} />
-            </Form.Group>
-            </Form>
-        </div>
-        </Col>
-        <Col>
-        <div>
         <Button className="button-01" type="submit">
         View Patient Profiles
       </Button>
-        </div>
+        </Col>
+        <Col>
+        <label className="treatmentLable">Treatments :</label>
+        <div className="div-02">
+        <textarea
+        className="form-control"
+        rows="6"
+        value={textareaValue}
+        onChange={(e) => setTextareaValue(e.target.value)}
+      />
+        </div><br/>
         </Col>
     </Row>
  </>
     )
 }
 export default ImageUploadForm;
+
