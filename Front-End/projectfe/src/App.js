@@ -9,6 +9,8 @@ import {About} from './pages/about';
 import {Contact} from './pages/contact';
 import {Doctor} from './pages/doctorlog';
 import {Patient} from './pages/patientlog';
+import PatientProfilesDoctorView from './pages/PatientProfilesDoctorView'
+import PatientProfilePatientView from './pages/PatientProfilePatientView'
 function App() {
   return (
     <>
@@ -18,7 +20,9 @@ function App() {
         <Route path='/home' exact element={<Home/>}/> 
         <Route path='/about'  element={<About/>}/> 
         <Route path='/contact' element={<Contact/>}/> 
-        <Route path='/doctorlog' element={<Doctor/>}/> 
+        <Route path='/doctorlog' element={<Doctor/>}/>
+        <Route path='/patientProfiles' element={<PatientProfilesDoctorView/>}/> 
+        <Route path='/patientprofile' element={<PatientProfilePatientView />}/> 
         <Route path='/patientlog' element={<Patient/>}/> 
       </Routes>
     </Router>
