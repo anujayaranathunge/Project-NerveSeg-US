@@ -36,7 +36,7 @@ const Footer = () => {
                   height="30"
                   className="d-inline-block align-top"
                 />{' '}
-                ervesegus.gmail.com</p>
+                nervesegus.gmail.com</p>
 
             <p>
             <img
