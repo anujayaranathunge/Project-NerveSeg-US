@@ -18,19 +18,7 @@ export const ImageUploadForm = () =>{
     e.preventDefault();
     // handle file upload logic
   };
-  const showImage = () => {
-    setImageUrl('images/1_1_mask.png');
-    setLabelText('Nerve Anomalies Found !');
-  };
-  const handleButtonClick = () => {
-    const newText = "Catheter Insertion is needed. \nConsult your physician on further treatments. \n\n\n\n Thank you For Using NervevSeg-US ! ";
-    if (textareaValue.includes(newText)) {
-      return;
-    }
-    setTextareaValue(textareaValue + newText);
-  };
-  
-
+ 
     return(
 <>
     <Row>
@@ -58,7 +46,6 @@ export const ImageUploadForm = () =>{
         </div>
       )}
       <Button
-        onClick={showImage}
         type="submit"
         variant="primary"
         disabled={!selectedFile}
@@ -83,7 +70,7 @@ export const ImageUploadForm = () =>{
     <label>{labelText}</label>
     </div>
     
-    <Button className="treatmentsButton" onClick={handleButtonClick}>View Treatments</Button>
+    <Button className="treatmentsButton">View Treatments</Button>
     </Col>
     </Row><br/>
     <Row>
@@ -99,7 +86,7 @@ export const ImageUploadForm = () =>{
         className="form-control"
         rows="6"
         value={textareaValue}
-        onChange={(e) => setTextareaValue(e.target.value)}
+        
       />
         </div><br/>
         </Col>
