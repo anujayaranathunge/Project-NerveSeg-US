@@ -1,0 +1,47 @@
+.buttonSinein{
+    margin-left: 70px;
+    width: 100px;
+ }
+ .texthome{
+    margin-left: 20px;
+ }
+ .col01{
+    background-color:rgba(141, 191, 237, 1);
+ }
+ .welcometexthome{
+    margin-left: 50px;
+    margin-top: 120px;
+    
+ }
+ .homeicone{
+   margin-left: 70px;
+ }
+ .getintuch{
+   margin-left: 40px;
+ }
+
+/*Contact.css*/
+
+ .contactdiv1{
+   margin-top: 20px;
+   margin-left: 50px;
+   background-color: rgba(164, 203, 205, 1);
+}
+
+.contactDImage{
+   width: 550px;
+   height: 450px;
+}
+
+.contactdiv2{
+   margin-top: 100px;
+   margin-left: 150px;
+}
+.contactbg{
+   background-color: rgba(164, 203, 205, 1);
+}
+.contacButton{
+   margin-left: 120px;
+   width: 200px;
+   height: 50px;
+}

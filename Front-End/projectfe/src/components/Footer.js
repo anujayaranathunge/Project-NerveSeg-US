@@ -3,23 +3,26 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const Footer = () => {
   return (
-    <div>
     <footer className='bg-dark text-light'>
       <Container>
         <Row>
           <Col md={4}>
-          <br/>
-          <h3 >NervevSeg-US</h3><br/>
+            <br/>
+          <h3 className='text-warning'>NerveSeg-US</h3>
           <p>Identification of source of pain through nerve segmentation of ultrasound medical images.</p>
           </Col>
+
           <Col md={4} >
-            <br/>
+
+          <br/>
+          
+            <div className='getintuch'>
             <h5 className='text-warning'>Get In Touch</h5>
             <br/>
             <p>
             <img
                   alt=""
-                  src="location.png"
+                  src="images/location.png"
                   width="30"
                   height="30"
                   className="d-inline-block align-top"
@@ -28,42 +31,48 @@ const Footer = () => {
             <p>
             <img
                   alt=""
-                  src="email.png"
+                  src="images/email.png"
                   width="30"
                   height="30"
                   className="d-inline-block align-top"
                 />{' '}
-                ervesegus.gmail.com</p>
+                nervesegus.gmail.com</p>
 
             <p>
             <img
                   alt=""
-                  src="telephone.png"
+                  src="images/telephone.png"
                   width="30"
                   height="30"
                   className="d-inline-block align-top"
                 />{' '}
                 +94778694522</p>
+                </div>
           </Col>
+
+
+
           <Col md={2}>
           <br/>
             <h5 className='text-warning'>Quick Links</h5>
             <ul className="list-unstyled, variant-dark">
               <li><a href="/home" class="text-light text-decoration-none">Home</a></li>
               <li><a href="/about" class="text-light text-decoration-none">About</a></li>
-              <li><a href="/doctor" class="text-light text-decoration-none">Doctor</a></li>
-              <li><a href="/patient" class="text-light text-decoration-none">Patient</a></li>
+              <li><a href="/doctorlog" class="text-light text-decoration-none">Doctor</a></li>
+              <li><a href="/patientlog" class="text-light text-decoration-none">Patient</a></li>
               <li><a href="/contact" class="text-light text-decoration-none">Contact</a></li>
             </ul>
           </Col>
+
           <Col md={2}>
+
           <br/>
             <h5 className='text-warning'>Follow Us</h5>
             <br/>
               <a href="#">
               <img
                   alt=""
-                  src="facebook.png"
+                  src="images/facebook.png"
                   width="30"
                   height="30"
                   className="d-inline-block align-top"
@@ -73,7 +82,7 @@ const Footer = () => {
               <a href="#">
                 <img
                   alt=""
-                  src="twitter.png"
+                  src="images/twitter.png"
                   width="30"
                   height="30"
                   className="d-inline-block align-top"
@@ -83,7 +92,7 @@ const Footer = () => {
               <a href="#">
               <img
                   alt=""
-                  src="insta.png"
+                  src="images/insta.png"
                   width="30"
                   height="30"
                   className="d-inline-block align-top"
@@ -93,22 +102,24 @@ const Footer = () => {
               <a href="#">
               <img
                   alt=""
-                  src="likein.png"
+                  src="images/likein.png"
                   width="30"
                   height="30"
                   className="d-inline-block align-top"
                 />
                 </a>
+        
+
           </Col>
         </Row>
         <Row>
           <Col md={8}>
-            <p className='text-secondary'>&copy; 2023 MyWebsite. All Rights Reserved.</p>
+            <p>&copy; 2023 NerveSeg-US. All Rights Reserved.</p>
           </Col>
         </Row>
       </Container>
     </footer>
-    </div>
+    
   );
 };
 export default Footer;
