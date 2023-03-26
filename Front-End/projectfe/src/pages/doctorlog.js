@@ -42,7 +42,7 @@ export const Doctor = () => {
                 />
               </div>
             </div>
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="dloging-btn">
               Login
             </button>
           </form>
