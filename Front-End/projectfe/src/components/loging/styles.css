@@ -1,0 +1,63 @@
+.image-container {
+
+    position: absolute;
+    width: 864px;
+    height: 669px;
+    left: 0px;
+    top: 108px;
+  
+  }
+  
+  .form-container {
+    background: #7698F0;
+    padding-top: 50px;
+  }
+  
+  
+  .doctor-login {
+    position: absolute;
+    width: 362px;
+    height: 70px;
+    left: 1109px;
+    top: 137px;
+  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 67px;
+  
+    color: #000000;
+  
+    border: 1px solid #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .login {
+    position: absolute;
+    width: 421px;
+    height: 80px;
+    left: 1101px;
+    top: 514px;
+  
+    background: #2F9639;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+  }
+  
+  .login-form{
+    width: 500px;
+  }
+  
+  .inputLabel{
+    padding-left: 100px;
+  }
+
+  .dloging-btn{
+    background-color: #2F9639;
+    color: white;
+    width: 180px;
+    height: 40px;
+    margin-left: 90px;
+    border-radius: 10px;
+  }
