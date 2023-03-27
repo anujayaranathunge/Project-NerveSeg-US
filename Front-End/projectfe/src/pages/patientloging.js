@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import loginImg from "../components/loging/doctor.jpg";
+import loginImg from "../components/loging/patient.jpg";
 import "../components/loging/styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-export const Doctor = () => {
-  return (
-    <div className="container-fluid">
+export const Patient = () =>{
+    return(
+        <div className="container-fluid">
       <div className="row">
         <div className="col-md-6 p-0">
           <img src={loginImg} alt="example image" className="w-100 h-100" />
@@ -13,12 +13,12 @@ export const Doctor = () => {
         <div className="col-md-6 d-flex  justify-content-center form-container">
           
           <form className="login-form">
-            <div className="login-name">
-                <h2 className="mb-4">Doctor Login</h2>
+          <div className="login-name">
+                <h2 className="mb-4">Patient Login</h2>
                 </div>
             <div className="form-group mb-3 row">
               <label htmlFor="doctorId" className="col-sm-1 col-form-label">
-                DoctorID:
+                Username:
               </label>
               <div className="col-sm-10 mt-2 inputLabel">
                 <input
@@ -59,4 +59,4 @@ export const Doctor = () => {
       </div>
     </div>
   );
-};
+}
