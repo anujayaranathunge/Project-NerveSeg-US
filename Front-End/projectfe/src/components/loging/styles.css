@@ -47,6 +47,11 @@
   
   .login-form{
     width: 500px;
+    margin-left: 60px;
+  }
+
+  .login-name{
+    margin-left: 120px;
   }
   
   .inputLabel{
@@ -60,4 +65,11 @@
     height: 40px;
     margin-left: 90px;
     border-radius: 10px;
+  }
+  .forgot-password{
+    margin-left: 120px;
+  }
+
+  .register-here{
+    margin-left: 50px;
   }

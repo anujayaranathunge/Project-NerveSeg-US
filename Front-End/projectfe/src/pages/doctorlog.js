@@ -13,7 +13,9 @@ export const Doctor = () => {
         <div className="col-md-6 d-flex  justify-content-center form-container">
           
           <form className="login-form">
-            <h2 className="mb-4">Doctor Login</h2>
+            <div className="login-name">
+                <h2 className="mb-4">Doctor Login</h2>
+                </div>
             <div className="form-group mb-3 row">
               <label htmlFor="doctorId" className="col-sm-1 col-form-label">
                 DoctorID:
@@ -45,6 +47,12 @@ export const Doctor = () => {
             <button type="submit" className="dloging-btn">
               Login
             </button>
+            <div className="forgot-password">
+            <p>Forgot Password</p>
+            </div>
+            <div className="register-here">
+            <p>Don't have an account? <a href="signup.html">Register Here</a></p>
+            </div>
           </form>
           
         </div>
