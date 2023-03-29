@@ -13,7 +13,6 @@
     padding-top: 50px;
   }
   
-  
   .doctor-login {
     position: absolute;
     width: 362px;
@@ -65,6 +64,7 @@
     height: 40px;
     margin-left: 90px;
     border-radius: 10px;
+    font-size: larger;
   }
   .forgot-password{
     margin-left: 120px;
@@ -72,6 +72,15 @@
   }
 
   .register-here{
-    margin-left: 50px;
+    margin-left: 23px;
     color: white;
+    font-size: large;
+  }
+  .register-hereLink{
+    color: blue;
+    font-size: large;
+  }
+  .loging-btn-text{
+    margin-left: 65px;
+    margin-top: 70px;
   }
