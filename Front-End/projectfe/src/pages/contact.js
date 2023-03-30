@@ -4,17 +4,28 @@ import { Form, FormGroup, Input, Label, Button, Row, Col } from 'react-bootstrap
 
 export const Contact = () => {
   ///////
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Do something with the form data, like sending it to a server
+   
+  };
+
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs.sendForm('service_1ia04kd', 'template_aggy7uk', form.current, 'UCdXLti3pSNxZB5AV')
       .then((result) => {
           console.log(result.text);
           console.log("message sent")
       }, (error) => {
           console.log(error.text);
+      });
+      setFormData({
+        name: '',
+        email: '',
+        message: ''
       });
   };
   /////
@@ -33,7 +44,7 @@ export const Contact = () => {
       <br/>
       <label className='contactmasg'>Message :</label>
       <textarea className='contactTextA' name="message" />
-      <input className='contacButton' type="submit" value="Send" />
+      <input className='contacButton' type="submit" value="Contact Us"/>
     </form>
       <br/>
     </div>
