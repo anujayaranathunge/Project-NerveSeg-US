@@ -44,14 +44,16 @@ export const Doctor = () => {
                 />
               </div>
             </div>
+            <div className="loging-btn-text">
             <button type="submit" className="dloging-btn">
-              Login
+              LOGIN
             </button>
             <div className="forgot-password">
             <p>Forgot Password</p>
             </div>
             <div className="register-here">
-            <p>Don't have an account? <a href="signup.html">Register Here</a></p>
+            <p>Don't have an account? <a className="register-hereLink" href="signup.html">REGISTER HERE</a></p>
+            </div>
             </div>
           </form>
           
