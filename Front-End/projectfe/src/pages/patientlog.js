@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import React, {useState} from "react";
 import "./patient.css"
 import FormInput from "./FormInput";
@@ -63,11 +64,14 @@ export const Patient = () =>{
 
 
         console.log(values);
+    let Linking;
     return (
         <div className="patient">
         <form onSubmit={handleSubmit}>
-            <h1>Get Started!</h1>
-            <h2>Patient</h2>
+            <h1 className="P1">Get Started!</h1>
+            <h2 className="P2">Patient</h2>
+            <h6 className="P3">Already have an account ?</h6>
+            <Link className="Link" to='/Home'>Sign in</Link>
             {inputs.map((input) => (
                 <FormInput
                     key={input.id}
