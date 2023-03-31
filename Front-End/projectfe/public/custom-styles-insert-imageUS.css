@@ -1,0 +1,51 @@
+.div-one{
+    margin-left: 70px;
+    margin-top: 50px;
+    width: 400px;
+    
+}
+.text-box-one{
+    margin-left: 120px;
+    margin-top: -37px;
+}
+.uplode{
+    margin-left: 0px;
+}
+.textTretmat{
+    margin-left: 90px;
+    
+}
+.text-area{
+    margin-left: 90px;
+    height: 200px;
+    background-color: rgba(11, 103, 108, 1);
+}
+.div-02{
+    width: 560px;
+    margin-left: 95px;
+}
+.div-03{
+    background-color: rgba(217, 217, 217, 1);
+    height: 415px;
+    width: 560px;
+    margin-top: 45px;
+   margin-left: 100px;
+}
+.button-01{
+    height: 70px;
+    width: 200px;
+    margin-left: 70px;
+    font-weight: bold;
+}
+.treatmentsButton{
+    margin-top: 60px;
+    margin-left: 95px;
+}
+.treatmentLable{
+    margin-left: 96px;
+    font-size: larger;
+}
+.imageLabel{
+    margin-left: 100px;
+    font-size: larger;
+}
