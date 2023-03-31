@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import loginImg from "../components/loging/doctor.jpg";
 import "../components/loging/styles.css";
@@ -62,3 +63,5 @@ export const Doctor = () => {
     </div>
   );
 };
+
+
