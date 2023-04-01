@@ -1,45 +1,42 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { Form, FormGroup, Input, Label, Button, Row, Col } from 'react-bootstrap';
 
 export const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+ 
+  const form = useRef();
 
-  const handleChange = e => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = e => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    console.log(formData); // or send data to server
-    setFormData({ name: '', email: '', message: '' });
+    emailjs.sendForm('service_1ia04kd', 'template_aggy7uk', form.current, 'UCdXLti3pSNxZB5AV')
+      .then((result) => {
+          console.log(result.text);
+          console.log("message sent")
+          form.current.reset(); // Reset the form
+          alert("Your message has been sent successfully.. \nThank You!"); // Popup message
+      }, (error) => {
+          console.log(error.text);
+          
+      }); 
   };
-
+  /////
   return (
     <Row className='contactbg'>
       <Col>
     <div className='contactdiv1'>
       <h1>Contact Us</h1>
       <br/>
-      <Form onSubmit={handleSubmit}>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Full Name:</Form.Label>
-        <Form.Control className="text-box-one" type="id" placeholder="Pleace Enter Your Full Name"/>
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>E-mail:</Form.Label>
-        <Form.Control className="text-box-one" type="id" placeholder="Pleace Enter Your E-mail" />
-      </Form.Group><br/>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Message:</Form.Label>
-        <Form.Control as="textarea" rows={4} className="text-box-one" type="id"/>
-        <br/>
-      </Form.Group>
-        <Button className='contacButton' color="primary" type="submit">Contact Us</Button>
-      </Form>
+      <form ref={form} onSubmit={sendEmail}>
+      <label className='contactText'>Name :</label>
+      <input className='contactTextbox' type="text" name="user_name" placeholder='Enter Your Full Name'/>
+      <br/>
+      <label className='contactText'>Email :</label>
+      <input className='contactTextboxA' type="email" name="user_email" placeholder='Enter Your Email' />
+      <br/>
+      <label className='contactmasg'>Message :</label>
+      <textarea className='contactTextA' name="message" />
+      <input className='contacButton' type="submit" value="Contact Us"/>
+    </form>
       <br/>
     </div>
     </Col>

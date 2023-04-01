@@ -1,5 +1,6 @@
 import React from "react";
-import {  Row, Col, Button,Image, Link } from 'react-bootstrap';
+import {  Row, Col, Button,Image } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export const Home = () =>{
     return(
@@ -27,7 +28,9 @@ export const Home = () =>{
                 <br/>
                <h4 className="texthome">Sign in as a Doctor</h4> 
                <a href="/insertimageus" class="text-light text-decoration-none">
+               <Link to="/doctorlog">
                <Button className="buttonSinein">SIGN IN</Button>
+               </Link>
                </a>
                </div>
           </Col>
@@ -47,7 +50,9 @@ export const Home = () =>{
                 
                <h4 className="texthome">Sign in as a Patient</h4> 
                <a href="/patientlog" class="text-light text-decoration-none">
+                <Link to="/patientlog">
                <Button className="buttonSinein">SIGN IN</Button>
+               </Link>
                </a> 
                </div>
           </Col>
