@@ -11,6 +11,9 @@ import {Doctor} from './pages/doctorlog';
 import {Patient} from './pages/patientlog';
 import { Doctorreg } from './pages/doctor-reg';
 import { Patientreg } from './pages/patient-reg';
+import {ImageUploadForm} from './pages/insertimageus';
+import {PatientProfilesDoctorView} from './pages/PatientProfilesDoctorView';
+import {PatientProfilePatientView} from './pages/PatientProfilePatientView';
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
         <Route path='/patientlog' element={<Patient/>}/>
         <Route path='/doctor-reg' element={<Doctorreg/>}/>
         <Route path='/patient-reg' element={<Patientreg/>}/>
+        <Route path='/insertimageus' element={<ImageUploadForm/>}/>
+        <Route path='/PatientProfilesDoctorView' element={<PatientProfilesDoctorView/>}/>
+        <Route path='/PatientProfilePatientView' element={<PatientProfilePatientView/>}/>
         
 
       </Routes>

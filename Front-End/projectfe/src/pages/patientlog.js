@@ -46,9 +46,11 @@ export const Patient = () =>{
               </div>
             </div>
             <div className="loging-btn-text">
+              <Link to="/PatientProfilePatientView">
             <button type="submit" className="dloging-btn">
               LOGIN
             </button>
+            </Link>
             <div className="forgot-password">
             <p>Forgot Password</p>
             </div>

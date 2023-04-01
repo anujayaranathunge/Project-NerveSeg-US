@@ -10,4 +10,4 @@ const PatientProfilePatientView = () => {
   );
 };
 
-export default PatientProfilePatientView;
+export {PatientProfilePatientView};
