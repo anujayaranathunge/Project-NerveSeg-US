@@ -1,6 +1,7 @@
 import React, {useState} from "react";
-import { Container, Row, Col, Button,Image, Link, Form } from 'react-bootstrap';
+import { Container, Row, Col, Button,Image, Form } from 'react-bootstrap';
 import { CloudUpload } from 'react-bootstrap-icons';
+import {Link} from 'react-router-dom';
 
 export const ImageUploadForm = () =>{
   const [selectedFile, setSelectedFile] = useState(null);
@@ -75,9 +76,11 @@ export const ImageUploadForm = () =>{
     </Row><br/>
     <Row>
         <Col>
+        <Link to="/PatientProfilesDoctorView">
         <Button className="button-01" type="submit">
         View Patient Profiles
       </Button>
+      </Link>
         </Col>
         <Col>
         <label className="treatmentLable">Treatments :</label>
