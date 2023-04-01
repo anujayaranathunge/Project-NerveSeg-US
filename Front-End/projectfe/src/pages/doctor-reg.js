@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import React, {useState} from "react";
 import "./doctorReg.css"
-import FormInput from "./FormInput";
+import RegFormInput from "./regFormInput";
 import {wait} from "@testing-library/user-event/dist/utils";
 
 
@@ -51,7 +51,7 @@ export const Doctorreg = () =>{
             type:"password",
             placeholder:"Enter your password",
             errorMessage:"Password should be 8-10 characters and include at least 1 letter,1 number and 1 special character! ",
-            label:"Password :",
+            label1 :"Password :",
             pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,10}$`,
             required:true,
         },
@@ -77,7 +77,7 @@ export const Doctorreg = () =>{
                 <h6 className="D3">Already have an account ?</h6>
                 <Link className="Link1" to='/Home'>Sign in</Link>
                 {inputs.map((input) => (
-                    <FormInput
+                    <RegFormInput
                         key={input.id}
                         {...input}
                         value= {values[input.name]}

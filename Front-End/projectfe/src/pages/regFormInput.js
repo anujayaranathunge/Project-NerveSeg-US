@@ -1,7 +1,7 @@
 import "./form.css"
 import {useState} from "react";
 
-const FormInput = (props) => {
+const RegFormInput = (props) => {
     const [focused, setFocused] = useState(false);
     const {label, errorMessage, onChange, id, ...inputProps} = props;
     const handleFocus = (e) => {
@@ -18,4 +18,4 @@ const FormInput = (props) => {
         </div>
     );
  };
- export default FormInput
+ export default RegFormInput

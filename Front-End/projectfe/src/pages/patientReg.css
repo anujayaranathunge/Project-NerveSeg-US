@@ -1,11 +1,11 @@
-/*.patient{
+.patient{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 60vh;
     background: #D3EAF6;
 }
-form{
+.regForm{
     background:#D3EAF6;
     padding: 0px 60px;
 }
@@ -61,4 +61,4 @@ form{
         visibility: collapse;
     }
 
-}*/
+}
