@@ -70,12 +70,12 @@ export const Doctorreg = () =>{
     console.log(values);
     let Linking;
     return (
-        <div className="doctor">
-            <form onSubmit={handleSubmit}>
+        <div className="regDoctor">
+            <form className="regFormDoc" onSubmit={handleSubmit}>
                 <h1 className="D1">Get Started!</h1>
                 <h2 className="D2">Doctor</h2>
                 <h6 className="D3">Already have an account ?</h6>
-                <Link className="Link1" to='/Home'>Sign in</Link>
+                <Link className="regLink1" to='/Home'>Sign in</Link>
                 {inputs.map((input) => (
                     <RegFormInput
                         key={input.id}

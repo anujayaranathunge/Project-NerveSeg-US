@@ -17,16 +17,16 @@
     width: 170px;
     height: 40px;
     position: absolute;
-    left: 610px;
+    left: 660px;
     font-size: 20px;
-    top: 420px;
+    top: 400px;
 }
 .P1{
     color: #2760F1;
     text-align: center;
     position: absolute;
     top: 100px;
-    left: 590px;
+    left: 650px;
 }
 .P2{
     color: black;
@@ -40,8 +40,8 @@
     color: black;
     text-align: center;
     position: absolute;
-    top: 470px;
-    left: 600px;
+    top: 460px;
+    left: 625px;
     font-weight: bold;
 }
 .Link{
@@ -49,8 +49,8 @@
     font-size: 18px;
     text-align: center;
     position: absolute;
-    top: 468px;
-    left: 805px;
+    top: 455px;
+    left: 830px;
     font-weight: bold;
     background: none;
 
