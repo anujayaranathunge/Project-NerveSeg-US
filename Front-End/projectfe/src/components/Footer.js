@@ -49,9 +49,7 @@ const Footer = () => {
                 +94778694522</p>
                 </div>
           </Col>
-
-
-
+          
           <Col md={2}>
           <br/>
             <h5 className='text-warning'>Quick Links</h5>
