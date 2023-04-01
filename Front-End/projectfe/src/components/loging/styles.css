@@ -1,5 +1,4 @@
 .image-container {
-
     position: absolute;
     width: 864px;
     height: 669px;
@@ -65,6 +64,7 @@
     margin-left: 90px;
     border-radius: 10px;
     font-size: larger;
+    font-weight: bolder;
   }
   .forgot-password{
     margin-left: 120px;
@@ -77,10 +77,11 @@
     font-size: large;
   }
   .register-hereLink{
-    color: blue;
-    font-size: large;
+    color: rgb(26, 26, 214);
+    font-weight: bold;
   }
   .loging-btn-text{
     margin-left: 65px;
     margin-top: 70px;
   }
+  

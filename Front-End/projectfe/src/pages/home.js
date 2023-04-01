@@ -50,7 +50,7 @@ export const Home = () =>{
                 
                <h4 className="texthome">Sign in as a Patient</h4> 
                <a href="/patientlog" class="text-light text-decoration-none">
-                <Link to="/patientloging">
+                <Link to="/patientlog">
                <Button className="buttonSinein">SIGN IN</Button>
                </Link>
                </a> 

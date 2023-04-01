@@ -1,4 +1,4 @@
-.doctor{
+/*.patient{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,7 +9,7 @@ form{
     background:#D3EAF6;
     padding: 0px 60px;
 }
-.BTN1{
+.BTN{
     background: #2760F1;
     color: white;
     font-weight: bold;
@@ -21,14 +21,14 @@ form{
     font-size: 20px;
     top: 420px;
 }
-.D1{
+.P1{
     color: #2760F1;
     text-align: center;
     position: absolute;
     top: 100px;
     left: 590px;
 }
-.D2{
+.P2{
     color: black;
     text-align: center;
     position: absolute;
@@ -36,7 +36,7 @@ form{
     left: 20px;
     font-weight: bold;
 }
-.D3 {
+.P3 {
     color: black;
     text-align: center;
     position: absolute;
@@ -44,7 +44,7 @@ form{
     left: 600px;
     font-weight: bold;
 }
-.Link1{
+.Link{
     color: blue;
     font-size: 18px;
     text-align: center;
@@ -61,6 +61,4 @@ form{
         visibility: collapse;
     }
 
-
-
-}
+}*/

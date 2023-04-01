@@ -1,11 +1,11 @@
 import {Link} from "react-router-dom";
 import React, {useState} from "react";
-import "./doctor.css"
+import "./doctorReg.css"
 import FormInput from "./FormInput";
 import {wait} from "@testing-library/user-event/dist/utils";
 
 
-export const Doctor = () =>{
+export const Doctorreg = () =>{
     const [values,setValues] = useState({
         FullName:"",
         DoctorID:"",
