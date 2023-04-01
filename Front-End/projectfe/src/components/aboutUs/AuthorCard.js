@@ -22,7 +22,7 @@ const AuthorCard = ({ avatar, description }) => {
           src={avatar}
         />
       </div>
-      <div>
+      <div >
         <p
           style={{
             textAlign: "center",
