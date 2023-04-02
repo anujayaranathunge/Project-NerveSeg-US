@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import React, {useState} from "react";
 import "./doctorReg.css"
-import FormInput from "./FormInput";
+import RegFormInput from "./regFormInput";
 import {wait} from "@testing-library/user-event/dist/utils";
 
 
@@ -21,7 +21,7 @@ export const Doctorreg = () =>{
             type:"text",
             placeholder:"Enter your fullName",
             errorMessage:"Username should be 3-16 characters and shouldn't include any special characters!",
-            label:"Full Name :",
+            labelReg:"Full Name :",
             pattern:"^[A-Za-z0-9]{3,16}$",
             required:true,
         },
@@ -31,7 +31,7 @@ export const Doctorreg = () =>{
             type:"text",
             placeholder:"Enter your Medical ID",
             errorMessage:"Medical number should be 3-8 characters and shouldn't include any special characters! ",
-            label:"Doctor ID :",
+            labelReg:"Doctor ID :",
             pattern:"^[A-Za-z0-9]{3,8}$",
             required:true,
 
@@ -42,7 +42,7 @@ export const Doctorreg = () =>{
             type:"Email",
             placeholder:"Enter your Email",
             errorMessage:"It should be a valid email address!",
-            label:"Email :",
+            labelReg:"Email :",
             required:true,
         },
         {
@@ -51,7 +51,7 @@ export const Doctorreg = () =>{
             type:"password",
             placeholder:"Enter your password",
             errorMessage:"Password should be 8-10 characters and include at least 1 letter,1 number and 1 special character! ",
-            label:"Password :",
+            labelReg:"Password :",
             pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,10}$`,
             required:true,
         },
@@ -70,14 +70,14 @@ export const Doctorreg = () =>{
     console.log(values);
     let Linking;
     return (
-        <div className="doctor">
-            <form onSubmit={handleSubmit}>
+        <div className="regDoctor">
+            <form className="regFormDoc" onSubmit={handleSubmit}>
                 <h1 className="D1">Get Started!</h1>
                 <h2 className="D2">Doctor</h2>
                 <h6 className="D3">Already have an account ?</h6>
-                <Link className="Link1" to='/Home'>Sign in</Link>
+                <Link className="regLink1" to='/Home'>Sign in</Link>
                 {inputs.map((input) => (
-                    <FormInput
+                    <RegFormInput
                         key={input.id}
                         {...input}
                         value= {values[input.name]}
