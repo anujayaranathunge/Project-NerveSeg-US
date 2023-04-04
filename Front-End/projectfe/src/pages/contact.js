@@ -3,19 +3,21 @@ import emailjs from '@emailjs/browser';
 import { Form, FormGroup, Input, Label, Button, Row, Col } from 'react-bootstrap';
 
 export const Contact = () => {
-  ///////
+ 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs.sendForm('service_1ia04kd', 'template_aggy7uk', form.current, 'UCdXLti3pSNxZB5AV')
       .then((result) => {
           console.log(result.text);
           console.log("message sent")
+          form.current.reset(); // Reset the form
+          alert("Your message has been sent successfully.. \nThank You!"); // Popup message
       }, (error) => {
           console.log(error.text);
-      });
+          
+      }); 
   };
   /////
   return (
@@ -26,14 +28,14 @@ export const Contact = () => {
       <br/>
       <form ref={form} onSubmit={sendEmail}>
       <label className='contactText'>Name :</label>
-      <input className='contactTextbox' type="text" name="user_name" placeholder='Enter Your Full Name' />
+      <input className='contactTextbox' type="text" name="user_name" placeholder='Enter Your Full Name'/>
       <br/>
       <label className='contactText'>Email :</label>
       <input className='contactTextboxA' type="email" name="user_email" placeholder='Enter Your Email' />
       <br/>
       <label className='contactmasg'>Message :</label>
       <textarea className='contactTextA' name="message" />
-      <input className='contacButton' type="submit" value="Send" />
+      <input className='contacButton' type="submit" value="Contact Us"/>
     </form>
       <br/>
     </div>

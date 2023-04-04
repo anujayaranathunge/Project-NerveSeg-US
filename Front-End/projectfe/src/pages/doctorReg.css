@@ -1,44 +1,64 @@
-/*.patient{
+.regDoctor{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 60vh;
     background: #D3EAF6;
 }
-form{
+.regFormDoc{
     background:#D3EAF6;
     padding: 0px 60px;
 }
-.BTN{
+.BTN1{
     background: #2760F1;
     color: white;
+    font-weight: bold;
     border-radius: 50px;
     width: 170px;
     height: 40px;
     position: absolute;
-    left: 610px;
+    left: 660px;
     font-size: 20px;
     top: 410px;
 }
-h1{
+.D1{
     color: #2760F1;
     text-align: center;
     position: absolute;
     top: 100px;
-    left: 590px;
+    left: 650px;
 }
-h2{
+.D2{
     color: black;
     text-align: center;
     position: absolute;
     top: 60px;
     left: 20px;
+    font-weight: bold;
+}
+.D3 {
+    color: black;
+    text-align: center;
+    position: absolute;
+    top: 460px;
+    left: 625px;
+    font-weight: bold;
+}
+.regLink1{
+    color: blue;
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    top: 455px;
+    left: 830px;
+    font-weight: bold;
+    background: none;
+
+
 }
 @media only screen and (max-width: 800px){
     h1{
         visibility: collapse;
     }
 
-
-
-}*/
+}
