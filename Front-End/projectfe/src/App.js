@@ -32,7 +32,6 @@ function App() {
         <Route path='/PatientProfilesDoctorView' element={<PatientProfilesDoctorView/>}/>
         <Route path='/PatientProfilePatientView' element={<PatientProfilePatientView/>}/>
         
-
       </Routes>
     </Router>
     <Footer/>
