@@ -37,7 +37,7 @@ const PatientProfilesDoctorView = () => {
             {[...new Array(50)].map((patient) => (
               <PatientInfoCard
                 patientName={
-                  "sss 423324213123 423324213123 423324213123 423324213123 fsdddddddddddddd"
+                  "Dhamith Karunarathna"
                 }
                 patientId={
                   "423324213123 423324213123 423324213123 423324213123 fsdddddddddddddd"

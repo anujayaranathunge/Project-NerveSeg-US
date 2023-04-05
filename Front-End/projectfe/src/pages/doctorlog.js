@@ -8,7 +8,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 export const Doctor = () => {
   const myhistory = useNavigate();
-  const [email, setEmail] = useState("");
+  const [id, setID] = useState("");
   const [password, setPassword] = useState("");
 
   async function submit(e) {
@@ -16,13 +16,14 @@ export const Doctor = () => {
 
     try {
       await axios
-        .post("http://localhost:3001/", {
-          email,
-          password,
+        .post("http://localhost:3001/doctorlog", {
+          id,
+          password
         })
         .then((res) => {
           if (res.data === "exist") {
             myhistory("/insertimageus");
+
           } else if (res.data === "notexist") {
             alert("Doctor Your not SignUp Please SignUp");
           }
@@ -48,16 +49,16 @@ export const Doctor = () => {
           <h2 className="mb-4">Doctor Login</h2>
             <div className="login-name"></div>
             <div className="form-group mb-3 row">
-              <label htmlFor="doctorId" className="col-sm-1 col-form-label">
-                Doctor Email:
+              <label style={{fontWeight:"bolder"}}  htmlFor="doctorId" className="col-sm-1 col-form-label">
+                DoctorID:
               </label>
               <div className="col-sm-10 mt-2 inputLabel">
                 <input
-                  type="email"
+                  type="id"
                   onChange={(e) => {
-                    setEmail(e.target.value);
+                    setID(e.target.value);
                   }}
-                  placeholder="Enter Your Doctor ID"
+                  placeholder="Enter Your DoctorID"
                   id=""
                   name=""
                   className="form-control"
@@ -66,7 +67,7 @@ export const Doctor = () => {
               </div>
             </div>
             <div className="form-group mb-3 row">
-              <label htmlFor="password" className="col-sm-1 col-form-label">
+              <label style={{fontWeight:"bolder"}}  htmlFor="password" className="col-sm-1 col-form-label">
                 Password:
               </label>
               <div className="col-sm-10 mt-2 inputLabel">

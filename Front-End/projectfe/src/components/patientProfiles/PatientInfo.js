@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
+import { useLocation } from "react-router-dom";
 
 const InfoEditor = ({ title, placeholder, exsistingContent }) => {
   const [content, setContent] = useState();
@@ -10,6 +11,8 @@ const InfoEditor = ({ title, placeholder, exsistingContent }) => {
       setContent(exsistingContent);
     }
   }, [exsistingContent]);
+
+  const lacation = useLocation();
 
   return (
     <div
@@ -81,14 +84,14 @@ const PatientInfo = () => {
                 marginBottom: "15px",
               }}
             >
-              <Image
+              <img
                 roundedCircle
                 style={{ height: "62px", width: "62px" }}
-                src={"https://i.pravatar.cc/150?img=21"}
+                src="images/user.png"
               />
               <div className="text-truncate">
-                <div>{"hsadaosjkdjasjd"}</div>
-                <div>{`ID - ${`sadsalkdjoaisjdjaspoj`}`}</div>
+                <div>{"dhamith karunarathna"}</div>
+                <div>{`ID - ${`20001678`}`}</div>
               </div>
             </div>
           </Row>

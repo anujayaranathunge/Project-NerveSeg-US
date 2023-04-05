@@ -8,21 +8,22 @@ import { Link, useNavigate } from "react-router-dom";
 
 export const Patient = () => {
   const myhistory = useNavigate();
-  const [email, setEmail] = useState("");
+  const [text, setName] = useState("");
   const [password, setPassword] = useState("");
+  
 
   async function submit(e) {
     e.preventDefault();
 
     try {
       await axios
-        .post("http://localhost:3001/", {
-          email,
+        .post("http://localhost:3001/patientlog", {
+          text,
           password,
         })
         .then((res) => {
           if (res.data === "exist") {
-            myhistory("/PatientProfilePatientView" /*,{state:{id:email}}*/);
+            myhistory("/PatientProfilePatientView",{state:{id:text}});
           } else if (res.data === "notexist") {
             alert("User have not sign up");
           }
@@ -48,16 +49,16 @@ export const Patient = () => {
           <h2 className="mb-4">Patient Login</h2>
             <div className="login-name"></div>
             <div className="form-group mb-3 row">
-              <label htmlFor="doctorId" className="col-sm-1 col-form-label">
-                Email:
+              <label style={{fontWeight:"bolder"}} htmlFor="doctorId" className="col-sm-1 col-form-label">
+                 Name:
               </label>
               <div className="col-sm-10 mt-2 inputLabel">
                 <input
-                  type="email"
+                  type="text"
                   onChange={(e) => {
-                    setEmail(e.target.value);
+                    setName(e.target.value);
                   }}
-                  placeholder="Enter Your Email"
+                  placeholder="Enter Your User Name"
                   id=""
                   name=""
                   className="form-control"
@@ -66,7 +67,7 @@ export const Patient = () => {
               </div>
             </div>
             <div className="form-group mb-3 row">
-              <label htmlFor="password" className="col-sm-1 col-form-label">
+              <label style={{fontWeight:"bolder"}} htmlFor="password" className="col-sm-1 col-form-label">
                 Password:
               </label>
               <div className="col-sm-10 mt-2 inputLabel">

@@ -184,7 +184,7 @@ export const Doctorreg = () => {
               onChange={(e) => {
                 setID(e.target.value);
               }}
-              placeholder="Enter Your Date of Birth"
+              placeholder="Enter Your Doctor ID"
               id=""
               name=""
               errorMessage=""

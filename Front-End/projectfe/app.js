@@ -9,11 +9,11 @@ app.use(cors());
 
 app.get("/", cors(), (req, res) => {});
 
-app.post("/", async (req, res) => {
-  const { email, password } = req.body;
+app.post("/patientlog", async (req, res) => {
+  const { text, password } = req.body;
 
   try {
-    const check = await patients.findOne({ email: email });
+    const check = await patients.findOne({ text: text });
     const checkp = await patients.findOne({ password: password });
 
     if (check && checkp) {
@@ -36,7 +36,7 @@ app.post("/patient-reg", async (req, res) => {
   };
 
   try {
-    const check = await patients.findOne({ email: email });
+    const check = await patients.findOne({ text: text });
     const checkp = await patients.findOne({ password: password });
 
     if (check && checkp) {
@@ -50,23 +50,24 @@ app.post("/patient-reg", async (req, res) => {
   }
 });
 
+//app.get("/", cors(), (req, res) => {});
 
-app.post("/", async (req, res) => {
-  const { email, password } = req.body;
-
-  try {
-    const check = await doctors.findOne({ email: email });
-    const checkp = await doctors.findOne({ password: password });
-
-    if (check && checkp) {
-      res.json("exist");
-    } else {
+app.post("/doctorlog", async (req, res) => {
+    const { id, password } = req.body;
+  
+    try {
+      const check = await doctors.findOne({ id: id });
+      const checkp = await doctors.findOne({ password: password });
+  
+      if (check && checkp) {
+        res.json("exist");
+      } else {
+        res.json("notexist");
+      }
+    } catch (e) {
       res.json("notexist");
     }
-  } catch (e) {
-    res.json("notexist");
-  }
-});
+  });
 
 app.post("/doctor-reg", async (req, res) => {
   const { email, password, text, id } = req.body;
@@ -78,7 +79,7 @@ app.post("/doctor-reg", async (req, res) => {
   };
 
   try {
-    const check = await doctors.findOne({ email: email });
+    const check = await doctors.findOne({ id:id });
     const checkp = await doctors.findOne({ password: password });
 
     if (check && checkp) {
