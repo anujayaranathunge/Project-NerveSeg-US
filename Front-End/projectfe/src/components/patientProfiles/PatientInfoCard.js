@@ -14,14 +14,14 @@ const PatientInfoCard = ({ patientName, patientId }) => {
       }}
       eventKey={patientId}
     >
-      <Image
+      <img
         roundedCircle
         style={{ height: "62px", width: "62px" }}
-        src={"https://i.pravatar.cc/150?img=21"}
+        src="images/user.png"
       />
       <div className="text-truncate">
         <div>{patientName}</div>
-        <div>{`ID - ${patientName}`}</div>
+        <div>{`ID - ${20001678}`}</div>
       </div>
     </ListGroup.Item>
   );

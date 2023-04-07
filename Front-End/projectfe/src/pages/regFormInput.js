@@ -1,4 +1,4 @@
-import "./form.css"
+/*import "./form.css"
 import {useState} from "react";
 
 const RegFormInput = (props) => {
@@ -18,4 +18,4 @@ const RegFormInput = (props) => {
         </div>
     );
  };
- export default RegFormInput
+ export default RegFormInput*/
